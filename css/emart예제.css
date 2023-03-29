@@ -1,0 +1,169 @@
+@font-face {
+    font-family: 'KorailRoundGothicBold';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2212@1.0/KorailRoundGothicBold.woff2') format('woff2');
+    font-weight: 700;
+    font-style: normal;
+}
+
+a{text-decoration: none; color: black;}
+li{list-style: none; }
+body{background-color: whitesmoke;}
+h1{
+    font-size: 2.5rem;
+    font-family: 'KorailRoundGothicBold';
+}
+/* header */
+.header{
+    width: 100%;
+    height: 100px;
+    position: fixed;
+    background-color: white;
+    font-family: 'KorailRoundGothicBold';
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header>.nav{
+    max-width: 1000px;
+    box-sizing: border-box;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 20px;
+    align-items: center;
+}
+.emart-logo{
+    float: left;
+}
+.nav-menu>ul{
+    font-size: 1.5rem;
+    display: flex;
+    width: 600px;
+    justify-content: space-between;
+}
+
+/* main */
+.main{
+    padding-top: 100px;
+    width: 800px;
+    margin: auto;
+}
+.main-up{
+    height: 150px;
+    padding-top: 150px;
+}
+.main-up>h3{
+    margin-top: 20px;
+    font-size: 1.5rem;
+    color: gray;
+}
+.search{
+    margin-bottom: 50px;
+    text-align: center;
+    box-sizing: border-box;
+    width: 800px;
+}
+.search>input[type="text"]{
+    min-width: 600px;
+    padding: 10px 15px;
+    border: 2px white solid;
+}
+.search>input[type="submit"]{
+    margin-left: 10px;
+    min-width: 150px;
+    padding: 10px 15px;
+    background-color: gold;
+    border-radius: 5px;
+    border: none;
+}
+.goods-tag{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+.goods-tag>ul{
+    display: flex;
+}
+.goods-tag>ul>li{
+    margin-right: 10px;
+    border: 1px solid gainsboro;
+    background-color: white;
+    display: flex;
+    padding: 10px 15px;
+    border-radius: 18px 18px 10px 18px;
+    justify-content: center;
+    align-items: center;
+}
+.goods-tag>ul>li:active{
+    background-color: gold;
+    transition: all 0.2s;
+}
+.search-datalist{
+    margin-left: 100px;
+    display: flex;
+}
+.search-datalist>list{
+    width: 50px;
+}
+.goods-gallery{
+    display: flex;
+    flex-flow: wrap;
+    column-gap: 10px;
+    row-gap:30px;
+    justify-content: center;
+    text-align: center;
+}    
+.goods-gallery>.goods-section{
+    width: 230px;
+    min-height: 350px;
+    background-color: white;
+    border-radius: 20px;
+    margin: 15px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+.goods-gallery>.goods-section>.image-wrap{
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    border-bottom: 1px solid gainsboro;
+}
+.goods-gallery>.goods-section>div{
+}
+.goods-gallery>.goods-section .span{
+    background-color: gold;
+    padding: 5px 10px;
+    height: 15px;
+    width: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 18px 18px 10px 18px;
+    margin-left: 160px;
+    margin-top: 20px;
+}
+.goods-gallery>.goods-section .image{
+    height: 150px;
+    width: 100%;
+    padding: 10px;
+    background-image: url(../img/bread.png);
+    background-position: center;
+    background-size: cover;
+}
+.goods-gallery>.goods-section:nth-child(1) .image{
+    height: 150px;
+    width: 100%;
+    padding: 10px;
+    background-image: url(../img/bread.png);
+    background-position: center;
+    background-size: cover;
+}
+.goods-gallery>.goods-section>h4{
+    margin-top: 15px;
+    font-weight: bold;
+}
+.goods-gallery>.goods-section>h4:last-child{
+    color: gold;
+}
